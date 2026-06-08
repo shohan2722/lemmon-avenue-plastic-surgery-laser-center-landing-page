@@ -1,0 +1,654 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lemmon Avenue Plastic Surgery &amp; Laser Center — Natural, Refreshed, Unmistakably You</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF7F0;--bg-2:#F3EEE3;--surface:#FFFFFF;--surface-warm:#FBF8F2;
+  --fg:#1F1F1F;--fg-2:#2E2C28;--muted:#6B655C;--meta:#908A80;
+  --border:#E7E0D2;--border-soft:#EFE9DD;
+  --gold:#D6A936;--gold-deep:#B68C22;--gold-soft:#F0E2BC;--gold-wash:#FBF4DF;
+  --cta:#1F1F1F;--cta-hover:#000000;--cta-on:#FFFFFF;--success:#17A34A;
+  --font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  --container:1180px;--radius:14px;--radius-sm:10px;--ease:cubic-bezier(.2,0,0,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.12;letter-spacing:-.01em;color:var(--fg)}
+h1{font-size:clamp(2.4rem,5.4vw,4.1rem)}
+h2{font-size:clamp(1.9rem,3.8vw,3rem)}
+h3{font-size:clamp(1.35rem,2.2vw,1.85rem);line-height:1.2}
+p{text-wrap:pretty}
+.eyebrow{font-family:var(--font-body);font-size:.74rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--muted);line-height:1.65}
+.muted{color:var(--muted)}
+strong{font-weight:600;color:var(--fg)}
+em{font-style:italic}
+.container{max-width:var(--container);margin-inline:auto;padding-inline:clamp(20px,5vw,40px)}
+section{position:relative}
+.band{padding-block:clamp(64px,9vw,120px)}
+.band--cream{background:var(--bg-2)}
+.band--white{background:var(--surface)}
+.band--ink{background:var(--fg);color:#F4EFE6}
+.band--ink h1,.band--ink h2,.band--ink h3{color:#FBF7EE}
+.center{text-align:center}
+.measure{max-width:62ch}
+.measure-narrow{max-width:48ch}
+.center .measure,.center .measure-narrow{margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:.55em;justify-content:center;font-family:var(--font-body);font-size:1rem;font-weight:600;line-height:1.25;padding:16px 30px;border-radius:var(--radius-sm);border:1.5px solid transparent;cursor:pointer;transition:transform .15s var(--ease),background .2s var(--ease),box-shadow .2s var(--ease);min-height:52px;text-align:center}
+.btn-primary{background:var(--cta);color:var(--cta-on);box-shadow:0 6px 20px rgba(31,31,31,.18)}
+.btn-primary:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:0 10px 28px rgba(31,31,31,.26)}
+.btn-gold{background:var(--gold);color:#1F1F1F;box-shadow:0 6px 20px rgba(214,169,54,.32)}
+.btn-gold:hover{background:var(--gold-deep);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--fg);border-color:var(--fg)}
+.btn-ghost:hover{background:var(--fg);color:#fff}
+.btn-ghost-light{background:transparent;color:#FBF7EE;border-color:rgba(251,247,238,.5)}
+.btn-ghost-light:hover{background:#FBF7EE;color:var(--fg)}
+.btn-sm{padding:11px 20px;min-height:44px;font-size:.92rem}
+.btn-block{display:flex;width:100%}
+.subnote{font-size:.86rem;color:var(--muted);margin-top:12px}
+.band--ink .subnote{color:rgba(244,239,230,.7)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(250,247,240,.96);backdrop-filter:saturate(160%) blur(14px);border-bottom:1.5px solid var(--gold-soft);box-shadow:0 2px 16px rgba(31,31,31,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:36px;height:140px}
+.nav-logo{flex-shrink:0;line-height:0}
+.nav-logo img{width:clamp(250px,29vw,400px);height:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:34px;flex-shrink:0}
+.nav-links a{font-size:1.08rem;font-weight:500;color:var(--fg-2);letter-spacing:.04em;transition:color .15s;white-space:nowrap}
+.nav-links a:hover{color:var(--gold-deep)}
+.nav-phone{font-weight:600;font-size:1.15rem;letter-spacing:.03em;white-space:nowrap}
+.nav-phone span{color:var(--gold-deep)}
+.nav-cta{display:flex;align-items:center;gap:20px;flex-shrink:0}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--fg);margin:5px 0;transition:.2s}
+.hero{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center;padding-block:clamp(48px,7vw,96px)}
+.hero-copy .eyebrow{display:inline-block;margin-bottom:20px}
+.hero-copy h1{margin-bottom:22px}
+.hero-copy .lead{margin-bottom:28px;max-width:48ch}
+.hero-hook{border-left:3px solid var(--gold);padding:18px 0 18px 22px;margin:0 0 30px}
+.hero-hook p{font-size:1.02rem;color:var(--fg-2)}
+.hero-hook .hook-lead{font-family:var(--font-display);font-style:italic;font-size:1.4rem;line-height:1.3;color:var(--fg);margin-bottom:12px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:24px}
+.trust-line{font-size:.88rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.trust-line .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);display:inline-block}
+.hero-media{position:relative}
+.hero-frame{border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -24px rgba(31,31,31,.4);aspect-ratio:3/3.7;background:var(--surface-warm)}
+.hero-frame img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-badge{position:absolute;left:-18px;bottom:34px;right:auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;box-shadow:0 14px 30px -12px rgba(31,31,31,.3);max-width:230px}
+.hero-badge .stars{color:var(--gold);font-size:.95rem;letter-spacing:2px}
+.hero-badge .b-text{font-size:.82rem;color:var(--muted);margin-top:4px;line-height:1.45}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}
+.split--reverse .split-media{order:2}
+.section-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 50px -26px rgba(31,31,31,.34);background:var(--surface-warm)}
+.section-img img{width:100%;height:100%;object-fit:cover}
+.section-img.portrait{aspect-ratio:3/3.7}
+.section-img.square{aspect-ratio:1/1}
+.section-head{margin-bottom:clamp(36px,5vw,56px)}
+.section-head .eyebrow{display:block;margin-bottom:16px}
+.section-head h2{margin-bottom:14px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.compare-card{border-radius:var(--radius);padding:34px clamp(24px,3vw,38px);border:1px solid var(--border)}
+.compare-card.std{background:var(--surface-warm)}
+.compare-card.la{background:var(--fg);color:#F4EFE6;border-color:var(--fg)}
+.compare-card h3{font-size:1.4rem;margin-bottom:8px}
+.compare-card.la h3{color:#FBF7EE}
+.compare-card .tag{font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px;display:block}
+.compare-card.std .tag{color:var(--muted)}
+.compare-card.la .tag{color:var(--gold)}
+.clist{list-style:none;display:grid;gap:14px}
+.clist li{display:flex;gap:12px;font-size:.97rem;line-height:1.55}
+.clist .mk{flex-shrink:0;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:.8rem;margin-top:2px}
+.compare-card.std .mk{background:#E9E2D4;color:var(--muted)}
+.compare-card.la .mk{background:var(--gold);color:#1F1F1F}
+.compare-card.la .clist li{color:rgba(244,239,230,.92)}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.svc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -24px rgba(31,31,31,.34)}
+.svc-thumb{aspect-ratio:16/10;overflow:hidden;background:var(--surface-warm)}
+.svc-thumb img{width:100%;height:100%;object-fit:cover}
+.svc-body{padding:26px 28px 30px}
+.svc-body h3{font-size:1.4rem;margin-bottom:10px}
+.svc-mark{color:var(--gold-deep);margin-right:6px}
+.svc-body p{font-size:.97rem;color:var(--muted);margin-bottom:14px}
+.svc-for{font-size:.82rem;color:var(--fg-2);border-top:1px solid var(--border-soft);padding-top:14px}
+.svc-for b{color:var(--gold-deep);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:.72rem}
+.callout{background:var(--gold-wash);border:1px solid var(--gold-soft);border-radius:var(--radius);padding:clamp(28px,4vw,44px);text-align:center}
+.callout h3{margin-bottom:12px}
+.callout p{max-width:60ch;margin:0 auto 22px;color:var(--fg-2)}
+.step{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,4vw,60px);align-items:center;margin-bottom:clamp(40px,6vw,80px)}
+.step:last-child{margin-bottom:0}
+.step--rev .step-media{order:2}
+.step-num{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--gold-deep);letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.step-num::before{content:"";width:40px;height:1.5px;background:var(--gold)}
+.step h3{margin-bottom:12px}
+.step p{color:var(--muted)}
+.step-quote{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--fg);margin-top:14px;border-left:2px solid var(--gold);padding-left:16px}
+.testi-track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;-webkit-overflow-scrolling:touch}
+.testi-track::-webkit-scrollbar{height:6px}
+.testi-track::-webkit-scrollbar-thumb{background:var(--gold-soft);border-radius:10px}
+.testi-card{flex:0 0 min(380px,84vw);scroll-snap-align:start;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:30px 30px 26px;display:flex;flex-direction:column}
+.testi-card .stars{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.testi-card blockquote{font-family:var(--font-display);font-size:1.18rem;line-height:1.45;color:var(--fg);margin-bottom:18px;flex:1}
+.testi-meta{font-size:.86rem;color:var(--muted);border-top:1px solid var(--border-soft);padding-top:14px}
+.testi-meta b{color:var(--fg);font-weight:600;font-family:var(--font-body)}
+.proof-bar{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 34px;margin-top:46px;text-align:center}
+.proof-bar .pi{font-size:.92rem;color:var(--fg-2)}
+.proof-bar .pi b{color:var(--gold-deep)}
+.cred-list{list-style:none;display:grid;gap:16px;margin:24px 0}
+.cred-list li{display:flex;gap:14px;font-size:1rem;color:var(--muted)}
+.cred-list .mk{flex-shrink:0;color:var(--gold);font-size:1.05rem;margin-top:1px}
+.about-media{display:grid;grid-template-columns:1fr;gap:18px}
+.about-media .stack-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qual-list{list-style:none;display:grid;gap:20px;max-width:64ch}
+.qual-list li{display:flex;gap:16px;font-size:1.04rem;line-height:1.6}
+.qual-list .mk{flex-shrink:0;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:600;margin-top:2px}
+.qual-list.yes .mk{background:var(--gold-wash);color:var(--gold-deep);border:1px solid var(--gold-soft)}
+.qual-list.no .mk{background:rgba(244,239,230,.08);color:#E0CFA0;border:1px solid rgba(214,169,54,.4)}
+.band--ink .qual-list li{color:rgba(244,239,230,.9)}
+.offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.offer-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.offer-card.feature{border-color:var(--gold);box-shadow:0 18px 40px -22px rgba(214,169,54,.4)}
+.offer-thumb{aspect-ratio:16/8;overflow:hidden;position:relative}
+.offer-thumb img{width:100%;height:100%;object-fit:cover}
+.offer-thumb .ribbon{position:absolute;top:14px;left:14px;background:var(--gold);color:#1F1F1F;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:6px}
+.offer-body{padding:28px 30px 32px;display:flex;flex-direction:column;flex:1}
+.offer-path{font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:8px}
+.offer-body h3{font-size:1.5rem;margin-bottom:6px}
+.offer-tagline{font-size:.95rem;color:var(--fg-2);font-style:italic;margin-bottom:14px}
+.offer-body p{font-size:.95rem;color:var(--muted);margin-bottom:18px;flex:1}
+.offer-price{font-size:.86rem;color:var(--fg-2);margin-bottom:18px}
+.offer-price b{color:var(--fg)}
+.fin-note{margin-top:32px;text-align:center;font-size:.97rem;color:var(--muted);max-width:62ch;margin-inline:auto}
+.fin-note b{color:var(--fg)}
+.faq-wrap{position:relative;border-radius:var(--radius);overflow:hidden}
+.faq-bg{position:absolute;inset:0;z-index:0}
+.faq-bg img{width:100%;height:100%;object-fit:cover}
+.faq-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(31,31,31,.94),rgba(31,31,31,.82))}
+.faq-inner{position:relative;z-index:1;padding:clamp(40px,6vw,72px) clamp(24px,5vw,64px)}
+.faq-list{display:grid;gap:0;max-width:820px;margin-inline:auto}
+.faq-item{border-bottom:1px solid rgba(244,239,230,.16)}
+.faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:flex-start;padding:24px 0;font-family:var(--font-display);font-size:1.28rem;font-weight:500;color:#FBF7EE;line-height:1.3}
+.faq-q .ic{flex-shrink:0;color:var(--gold);font-size:1.4rem;line-height:1;transition:transform .25s var(--ease);margin-top:2px}
+.faq-item.open .faq-q .ic{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s var(--ease)}
+.faq-a-inner{padding:0 0 26px;color:rgba(244,239,230,.82);font-size:1rem;line-height:1.7}
+.final-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,5vw,72px);align-items:center}
+.final-cta-card{display:grid;gap:16px;margin-top:30px}
+.cta-row{background:rgba(244,239,230,.05);border:1px solid rgba(244,239,230,.16);border-radius:var(--radius-sm);padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.cta-row .cta-head{font-family:var(--font-display);font-size:1.25rem;color:#FBF7EE}
+.cta-row .cta-sub{font-size:.86rem;color:rgba(244,239,230,.66)}
+.final-media .section-img{aspect-ratio:3/3.7}
+.contact-block{margin-top:26px;font-size:.95rem;color:rgba(244,239,230,.82);display:grid;gap:8px}
+.contact-block b{color:#FBF7EE}
+.contact-block a{color:var(--gold)}
+.footer{background:#161513;color:rgba(244,239,230,.72);padding-block:56px}
+.footer-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start;border-bottom:1px solid rgba(244,239,230,.12);padding-bottom:36px;margin-bottom:28px}
+.footer-logo img{height:62px;width:auto}
+.footer-cols{display:flex;flex-wrap:wrap;gap:48px}
+.footer-col h4{font-family:var(--font-body);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;font-weight:600}
+.footer-col a,.footer-col p{display:block;font-size:.92rem;color:rgba(244,239,230,.72);margin-bottom:8px}
+.footer-col a:hover{color:var(--gold)}
+.footer-trust{font-size:.84rem;color:rgba(244,239,230,.55);line-height:1.7}
+.footer-bottom{font-size:.82rem;color:rgba(244,239,230,.45);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;background:rgba(250,247,240,.96);backdrop-filter:blur(10px);border-top:1px solid var(--border);padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:1024px){.compare,.svc-grid,.offer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:1024px) and (min-width:901px){
+  .nav-links{gap:18px}
+  .nav-links a{font-size:.95rem;letter-spacing:.02em}
+  .nav-phone{font-size:1rem}
+  .nav-inner{gap:18px}
+  .nav-cta{gap:12px}
+  .nav-logo img{width:clamp(200px,24vw,300px)}
+}
+@media(max-width:960px){
+  .nav-links{display:none}.nav-toggle{display:block}
+  .nav-cta .btn{display:none}
+  .nav-phone{font-size:1rem}
+}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}.hero-media{max-width:440px;margin-inline:auto;width:100%}
+  .hero-badge{left:0;bottom:20px;max-width:200px;padding:12px 14px}
+  .split,.final-grid{grid-template-columns:1fr;gap:30px}.split--reverse .split-media{order:0}
+  .step{grid-template-columns:1fr;gap:22px}.step--rev .step-media{order:0}.step-media{max-width:480px;margin-inline:auto;width:100%}
+  .final-media{max-width:420px;margin-inline:auto;width:100%}
+  .faq-inner{padding:clamp(32px,5vw,48px) clamp(16px,4vw,40px)}
+  .faq-q{font-size:1.1rem}
+}
+@media(max-width:680px){
+  body{font-size:16px}.compare,.svc-grid,.offer-grid{grid-template-columns:1fr}.about-media .stack-2{grid-template-columns:1fr}
+  .hero-actions .btn,.hero-actions{width:100%}.hero-badge{left:0;right:auto;max-width:180px;padding:10px 12px;bottom:14px}
+  .sticky-cta{display:block}.footer{padding-bottom:90px}
+  .hero-hook{padding:14px 0 14px 16px;margin:0 0 22px}
+  .hero-hook .hook-lead{font-size:1.15rem}
+  .callout{padding:24px 18px}
+  .svc-body{padding:20px 22px 24px}
+  .offer-body{padding:20px 22px 24px}
+  .offer-body h3{font-size:1.25rem}
+  .cta-row{padding:16px 18px}
+  .footer-top{flex-direction:column;gap:24px}
+  .footer-cols{flex-direction:column;gap:28px}
+  .footer-logo img{width:clamp(200px,55vw,300px);height:auto}
+  .final-cta-card{gap:12px}
+  .contact-block{font-size:.88rem}
+  .testi-card{flex:0 0 min(320px,88vw);padding:22px 22px 20px}
+}
+@media(max-width:400px){
+  .container{padding-inline:14px}
+  .nav-inner{gap:14px;height:120px}
+  .nav-logo img{width:clamp(180px,48vw,220px)}
+  .nav-phone{font-size:.88rem}
+  .hero-grid{gap:24px;padding-block:32px}
+  .hero-copy h1{font-size:1.9rem}
+  .final-grid{gap:22px}
+  .band{padding-block:44px}
+  .section-head h2{font-size:1.55rem}
+  .faq-inner{padding:24px 12px}
+  .faq-q{font-size:1rem;padding:18px 0}
+  .faq-a-inner{font-size:.92rem}
+  .proof-bar{flex-direction:column;gap:10px}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Lemmon Avenue Plastic Surgery and Laser Center home">
+      <img src="mq57k52h-logo.png" alt="Lemmon Avenue Plastic Surgery &amp; Laser Center">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#difference">The Difference</a>
+      <a href="#services">Services</a>
+      <a href="#journey">How It Works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#team">Our Team</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:2147020707" class="nav-phone">📞 <span>214.702.0707</span></a>
+      <a href="#assessment" class="btn btn-primary btn-sm">Free Assessment</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Dallas &amp; Frisco · Board-Certified Aesthetic Care</span>
+      <h1>Finally: A Dallas Aesthetic Practice That Gives You the Exact Look You Want — Natural, Refreshed, and Unmistakably You</h1>
+      <p class="lead">Lemmon Avenue Plastic Surgery &amp; Laser Center combines plastic-surgery-level expertise with full-service aesthetic convenience — so you get a personalized plan, trained specialists, and results that look exactly like you, only better. Dallas and Frisco locations available.</p>
+      <div class="hero-hook">
+        <p class="hook-lead">“Most people who walk through our doors say the same three words when they first call us: ‘I don't know.’”</p>
+        <p>They don't know which treatment is right. They don't know who to trust. They don't know if what they're seeing in the mirror can actually be fixed — or if it can, whether they'll come out looking like themselves. Here's what we want you to know: that's not a problem with you. That's a problem with an industry that's made aesthetic care far more confusing than it ever needs to be. At Lemmon Avenue, we built something different.</p>
+      </div>
+      <div class="hero-actions">
+        <a href="#assessment" class="btn btn-gold">→ Take the Free Aesthetic Assessment</a>
+        <a href="tel:2147020707" class="btn btn-ghost">Call 214.702.0707</a>
+      </div>
+      <p class="trust-line">
+        <span>Led by Board-Certified Plastic Surgeon Dr. Mark Deuber</span>
+        <span class="dot"></span><span>Two Dallas-Area Locations</span>
+        <span class="dot"></span><span>Hundreds of 5-Star Reviews</span>
+      </p>
+    </div>
+    <div class="hero-media reveal">
+      <div class="hero-frame"><img src="mq57k55v-Screenshot_31-5-2026_131713_www.instagram.com.jpeg" alt="A naturally luminous woman who looks refreshed and like herself, only better" loading="eager"></div>
+      <div class="hero-badge"><div class="stars">★★★★★</div><div class="b-text">“Everyone noticed. No one could tell.” — what hundreds of Dallas patients say.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--white" id="problem">
+  <div class="container split reveal">
+    <div class="split-copy">
+      <span class="eyebrow">You're Not Imagining It</span>
+      <h2 style="margin:14px 0 20px">You Know Something Has Changed. And You're Not Sure Who to Trust With It.</h2>
+      <p class="muted" style="margin-bottom:16px">Maybe it's the photographs. The ones from last year's holiday party compared to this one. Maybe it's the lighting in your home-office camera during video calls. Maybe it's just something you've felt for a while — a quiet disconnect between how vibrant you feel inside and what you're starting to see reflected back at you.</p>
+      <p class="muted" style="margin-bottom:16px">You've probably already spent time researching. You've scrolled through Instagram before-and-afters. You've Googled “best injector Dallas.” You've read about Botox versus filler versus laser. And if you're honest? <strong>You're more confused than when you started.</strong></p>
+      <p class="muted" style="margin-bottom:16px">Because here's what the research doesn't tell you: <strong>not all aesthetic providers are the same. Not even close.</strong> The woman at school pickup who looks perpetually surprised. The colleague who had “something done” but won't say what — and you can tell. These aren't vanity disasters. They're the predictable result of decisions made without the right expertise, oversight, or commitment to what actually looks best on you.</p>
+      <p class="muted" style="margin-bottom:16px">And the fear of becoming that story is completely valid — it's also the #1 reason qualified people who genuinely want help put it off, sometimes for years. But the collagen you're losing right now won't come back on its own. The volume loss just starting to show will become more significant the longer it goes untreated. <strong>Preventative aesthetics isn't vanity. It's a strategy.</strong></p>
+      <p style="font-family:var(--font-display);font-size:1.45rem;line-height:1.3;color:var(--fg);margin-top:8px">This is exactly the problem Lemmon Avenue was designed to solve — so you look like you, restored and radiantly confident, without anyone knowing exactly why.</p>
+    </div>
+    <div class="split-media"><div class="section-img portrait"><img src="mq57k4ws-ChatGPT-Image-Jun-8_-2026_-08_44_34-AM.png" alt="Visible, natural facial rejuvenation — a realistic improvement, not an overdone result" loading="lazy"></div></div>
+  </div>
+</section>
+
+<section class="band band--cream" id="difference">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">More Than a Med Spa</span>
+      <h2>Why “More Than a Med Spa” Isn't Marketing Language — It's a Meaningful Distinction</h2>
+      <p class="lead measure">Here's what you deserve to understand before you book anywhere.</p>
+    </div>
+    <div class="compare reveal">
+      <div class="compare-card std">
+        <span class="tag">At a Standard Med Spa</span><h3>The Typical Experience</h3>
+        <ul class="clist" style="margin-top:18px">
+          <li><span class="mk">–</span>Treatments may be administered by providers without specialized medical training</li>
+          <li><span class="mk">–</span>There is often no physician oversight of your care</li>
+          <li><span class="mk">–</span>Protocols are frequently standardized, not individualized</li>
+          <li><span class="mk">–</span>There may be no plan if something doesn't go as expected</li>
+          <li><span class="mk">–</span>Upselling is common; thoughtful treatment sequencing is rare</li>
+        </ul>
+      </div>
+      <div class="compare-card la">
+        <span class="tag">At Lemmon Avenue</span><h3>The Lemmon Avenue Standard</h3>
+        <ul class="clist" style="margin-top:18px">
+          <li><span class="mk">✓</span>Every patient is seen within a practice medically directed by Dr. Mark Deuber, Board-Certified Plastic Surgeon</li>
+          <li><span class="mk">✓</span>Our injectors, laser specialists, nurses, and providers are trained to the highest standards in the field</li>
+          <li><span class="mk">✓</span>Every recommendation starts with your unique anatomy, skin type, lifestyle, and goals — not a menu</li>
+          <li><span class="mk">✓</span>We treat conservatively and sequentially, building toward your best outcome over time</li>
+          <li><span class="mk">✓</span>Curious about surgical options? We're already the right practice to have that conversation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="split reveal" style="margin-top:clamp(48px,6vw,84px)">
+      <div class="split-media"><div class="section-img portrait"><img src="mq57k50j-ChatGPT-Image-Jun-8_-2026_-08_45_02-AM.png" alt="Dr. Mark Deuber, board-certified plastic surgeon and medical director" loading="lazy"></div></div>
+      <div class="split-copy">
+        <span class="eyebrow">The Practice Behind the Glow</span>
+        <h3 style="margin:14px 0 18px;font-size:clamp(1.6rem,2.6vw,2.2rem)">A Standard of Care Most Med Spas Simply Cannot Offer</h3>
+        <p class="muted" style="margin-bottom:16px">Dr. Mark Deuber is a board-certified plastic surgeon and the medical director of Lemmon Avenue Plastic Surgery &amp; Laser Center. His philosophy — shared across every member of the team — is rooted in the belief that the best aesthetic results are the ones that look effortlessly natural.</p>
+        <p class="muted" style="margin-bottom:16px">When you come to Lemmon Avenue, you're not just booking a treatment. You're accessing a standard of care that most med spas simply cannot offer — because most med spas don't have a board-certified plastic surgeon setting the standard for everything that happens inside them.</p>
+        <p style="font-family:var(--font-display);font-style:italic;font-size:1.4rem;color:var(--fg)">That difference is not small. It is everything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--white" id="services">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">What's Included</span>
+      <h2>One Practice. Every Solution. Zero Guesswork.</h2>
+      <p class="lead measure">Because the right answer isn't always one treatment — it's the right combination, in the right sequence, delivered by the right specialists. A complete suite of aesthetic services under one roof.</p>
+    </div>
+    <div class="svc-grid reveal">
+      <article class="svc-card"><div class="svc-thumb"><img src="mq57k4uu-ChatGPT-Image-Jun-8_-2026_-08_43_28-AM.png" alt="Natural lip and filler enhancement result" loading="lazy"></div><div class="svc-body"><h3><span class="svc-mark">✦</span>Injectable Treatments</h3><p>Botox, Dysport, and neurotoxin treatments for expression lines and preventative care. Dermal fillers for facial volume restoration, lip enhancement, jawline definition, and full facial balancing — administered by trained injectors who prioritize proportion, symmetry, and natural results.</p><p class="svc-for"><b>For:</b> Fine lines, facial volume loss, lip fullness, facial contour and balance</p></div></article>
+      <article class="svc-card"><div class="svc-thumb"><img src="mq57k4q9-ChatGPT-Image-Jun-8_-2026_-08_42_31-AM.png" alt="Improved skin quality and tone after laser rejuvenation" loading="lazy"></div><div class="svc-body"><h3><span class="svc-mark">✦</span>Advanced Laser Treatments</h3><p>BBL (BroadBand Light), Halo Laser Resurfacing, ProFractional Laser, and more — industry-leading technologies for skin texture, pigmentation, sun damage, and collagen stimulation. Results that turn back the clock without surgery.</p><p class="svc-for"><b>For:</b> Sun damage, uneven tone, texture, pores, acne scarring, redness</p></div></article>
+      <article class="svc-card"><div class="svc-thumb"><img src="mq57k52h-Screenshot_31-5-2026_13188_www.instagram.com.jpeg" alt="Provider performing a skin resurfacing treatment" loading="lazy"></div><div class="svc-body"><h3><span class="svc-mark">✦</span>Skin Rejuvenation &amp; Resurfacing</h3><p>RF Microneedling, HydraFacial, medical-grade chemical peels, and skin resurfacing treatments that restore luminosity, tighten skin, and address concerns from the inside out.</p><p class="svc-for"><b>For:</b> Dull skin, texture issues, early laxity, skin maintenance and glow</p></div></article>
+      <article class="svc-card"><div class="svc-thumb"><img src="mq57k552-Screenshot_31-5-2026_131650_www.instagram.com.jpeg" alt="Non-surgical body contouring treatment in progress" loading="lazy"></div><div class="svc-body"><h3><span class="svc-mark">✦</span>Body Contouring</h3><p>Non-surgical body treatments designed to sculpt, tighten, and refine without downtime. Ideal for patients who want to address stubborn areas without surgery.</p><p class="svc-for"><b>For:</b> Body sculpting, skin tightening, stubborn area reduction</p></div></article>
+      <article class="svc-card"><div class="svc-thumb"><img src="mq57k552-Screenshot_31-5-2026_131650_www.instagram.com.jpeg" alt="Confidential, medically supervised wellness treatment setting" loading="lazy"></div><div class="svc-body"><h3><span class="svc-mark">✦</span>Vaginal Wellness &amp; Urinary Incontinence</h3><p>Confidential, medically supervised treatments for intimate wellness, vaginal rejuvenation, and urinary incontinence — a category often underserved in aesthetics and deeply impactful for quality of life.</p><p class="svc-for"><b>For:</b> Intimate wellness, postpartum care, confidence and function</p></div></article>
+      <article class="svc-card"><div class="svc-thumb"><img src="mq57k57x-622142470_18551071234059458_5862623960599068038_n.jpg" alt="Staff with medical-grade skincare technology and products" loading="lazy"></div><div class="svc-body"><h3><span class="svc-mark">✦</span>Medical-Grade Skincare</h3><p>Curated professional skincare products, personalized regimens, and retail options designed to maintain and amplify your treatment results at home.</p><p class="svc-for"><b>For:</b> Daily maintenance, treatment support, skin health optimization</p></div></article>
+      <article class="svc-card"><div class="svc-thumb"><img src="mq57k50j-ChatGPT-Image-Jun-8_-2026_-08_45_02-AM.png" alt="Dr. Deuber, surgical authority within the practice" loading="lazy"></div><div class="svc-body"><h3><span class="svc-mark">✦</span>Cosmetic Surgery Consultations</h3><p>When non-surgical options have taken you as far as they can — or when you're ready to explore surgical solutions for more significant transformation — Lemmon Avenue's plastic surgery expertise is available within the same trusted practice relationship.</p><p class="svc-for"><b>For:</b> Breast procedures, facial surgery, body contouring surgery, and more</p></div></article>
+    </div>
+    <div class="callout reveal" style="margin-top:40px">
+      <h3>Not Sure Which of These Is Right for You?</h3>
+      <p>That's exactly what our free Aesthetic Intelligence Assessment is designed to solve. Answer a few simple questions about your concerns and goals, and we'll show you a personalized treatment path — before you ever need to book a consultation.</p>
+      <a href="#assessment" class="btn btn-gold">→ Take the Free Assessment (3 Minutes)</a>
+    </div>
+  </div>
+</section>
+
+<section class="band band--cream" id="journey">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The Lemmon Avenue Journey</span>
+      <h2>How It Works: From Your First Question to Your Best Results</h2>
+      <p class="lead measure">We've designed this process specifically to remove the overwhelm, eliminate the guesswork, and make sure every decision feels clear, confident, and completely right for you.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-media"><div class="section-img portrait"><img src="mq57k56s-Screenshot_31-5-2026_131743_www.instagram.com.jpeg" alt="A natural, aspirational result representing a refreshed look" loading="lazy"></div></div>
+      <div class="step-copy"><div class="step-num">Step 01</div><h3>Discover Your Best Treatment Path</h3><p>Start with our free Aesthetic Intelligence Assessment — a quick, personalized tool developed to help you understand which treatments are most likely to address your specific concerns and goals. No commitment, no pressure. Just clarity. This is the step that changes everything — because when you know what you actually need, choosing the right provider becomes simple.</p></div>
+    </div>
+    <div class="step step--rev reveal">
+      <div class="step-media"><div class="section-img square"><img src="mq57k4q0-660108687_18261217882293086_2577402996251596457_n.jpg" alt="The Lemmon Avenue aesthetic team" loading="lazy"></div></div>
+      <div class="step-copy"><div class="step-num">Step 02</div><h3>Meet Your Aesthetic Team</h3><p>Your consultation is nothing like a typical med spa. We take time. We listen to your history, concerns, goals, and reservations. We look at your face, skin, or body as a whole — not just the one thing you came in about. Then we build your personalized plan: treatments, sequence, timeline, and what to expect at every stage.</p><p class="step-quote">“Not rushed.” — because we believe your face deserves more than 15 minutes of attention.</p></div>
+    </div>
+    <div class="step reveal">
+      <div class="step-media"><div class="section-img square"><img src="mq57k52h-Screenshot_31-5-2026_13188_www.instagram.com.jpeg" alt="A treatment in progress with a trained specialist" loading="lazy"></div></div>
+      <div class="step-copy"><div class="step-num">Step 03</div><h3>Begin Your Personalized Treatment Plan</h3><p>With a clear roadmap in hand, you begin your aesthetic journey with complete confidence. Your treatments are administered by trained specialists using advanced medical-grade technology — and because every step was designed for you, your results look natural, balanced, and authentically yours.</p></div>
+    </div>
+    <div class="step step--rev reveal">
+      <div class="step-media"><div class="section-img portrait"><img src="mq57k4ws-ChatGPT-Image-Jun-8_-2026_-08_44_34-AM.png" alt="A strong, natural facial rejuvenation result" loading="lazy"></div></div>
+      <div class="step-copy"><div class="step-num">Step 04</div><h3>See and Maintain Your Results</h3><p>Aesthetic results are a conversation, not a one-time event. As your results develop over weeks and months, your Lemmon Avenue team remains your partner — adjusting, optimizing, and helping you maintain the results you love over the long term. Many patients describe this as the best relationship they have with a healthcare provider.</p></div>
+    </div>
+    <div class="step reveal">
+      <div class="step-media"><div class="section-img portrait"><img src="mq57k57q-Screenshot_31-5-2026_131845_www.instagram.com.jpeg" alt="A strong, natural facelift transformation result" loading="lazy"></div></div>
+      <div class="step-copy"><div class="step-num">Step 05 · Surgical Track</div><h3>Explore Your Full Transformation Potential</h3><p>For patients whose goals extend beyond what non-surgical treatments can achieve — or who are simply curious about surgical options — Dr. Deuber and the Lemmon Avenue surgical team are ready to guide that conversation within the same trusted practice. No need to start over with someone new.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--white" id="reviews">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">Patient Voices</span><h2>What Our Patients Say (In Their Own Words)</h2></div>
+    <div class="testi-track reveal" role="list">
+      <article class="testi-card" role="listitem"><div class="stars">★★★★★</div><blockquote>“I came in not knowing what I needed — just knowing I wanted to look more like myself again. The team took their time, explained everything, and what they did was so natural that my husband thought I'd just been sleeping better. That's exactly what I wanted.”</blockquote><div class="testi-meta"><b>Sarah M.</b> · Botox + Filler · Dallas Patient</div></article>
+      <article class="testi-card" role="listitem"><div class="stars">★★★★★</div><blockquote>“I've been to other places in Dallas and always felt rushed or oversold. Lemmon Avenue was completely different from the first call. The whole team was knowledgeable, professional, and genuinely warm from beginning to end.”</blockquote><div class="testi-meta"><b>Jennifer L.</b> · Halo Laser + HydraFacial · Frisco Patient</div></article>
+      <article class="testi-card" role="listitem"><div class="stars">★★★★★</div><blockquote>“I was extremely nervous — I'd seen too many ‘overdone’ results and almost didn't go. I'm so glad I did. The results are exactly what I asked for: nobody knows, but everyone has said I look amazing.”</blockquote><div class="testi-meta"><b>Rachel T.</b> · RF Microneedling + Injectables · Dallas Patient</div></article>
+      <article class="testi-card" role="listitem"><div class="stars">★★★★★</div><blockquote>“The team here is knowledgeable about all skin issues — and I came in with several. They built me a plan that made sense and explained every step. Six months in, my skin looks better than it did ten years ago. I'm not exaggerating.”</blockquote><div class="testi-meta"><b>Amanda K.</b> · Laser Series + Skincare Protocol · Dallas Patient</div></article>
+      <article class="testi-card" role="listitem"><div class="stars">★★★★★</div><blockquote>“Always professional. Always consistent. I've been coming here for two years and every single visit delivers. I refer everyone I know who asks me what I've been doing.”</blockquote><div class="testi-meta"><b>Michelle R.</b> · Maintenance Injectable Patient · Frisco Patient</div></article>
+    </div>
+    <div class="proof-bar reveal">
+      <span class="pi">★★★★★ <b>Hundreds</b> of 5-Star Reviews</span>
+      <span class="pi"><b>Two</b> Dallas-Area Locations</span>
+      <span class="pi">Trusted by <b>Thousands</b> of Patients</span>
+      <span class="pi"><b>Board-Certified</b> Plastic Surgeon Medical Director</span>
+    </div>
+    <div class="center reveal" style="margin-top:40px">
+      <a href="#assessment" class="btn btn-primary">→ Start My Free Aesthetic Assessment — Find My Best Treatment Path</a>
+      <p class="subnote">Takes 3 minutes. No commitment required. Personalized results delivered instantly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--cream" id="team">
+  <div class="container split reveal">
+    <div class="split-copy">
+      <span class="eyebrow">About the Team</span>
+      <h2 style="margin:14px 0 20px">The People Who Will Design Your Plan</h2>
+      <p class="muted" style="margin-bottom:16px">Why does it matter who's behind your aesthetic treatments? Because results are only as good as the expertise, judgment, and artistry of the people delivering them.</p>
+      <p class="muted" style="margin-bottom:16px">At Lemmon Avenue, that starts with <strong>Dr. Mark Deuber</strong> — a board-certified plastic surgeon whose medical direction sets the standard for everything in our practice. His philosophy is not about changing faces. It's about restoring and enhancing them — with a conservative, balanced approach that prioritizes what looks most natural on you specifically.</p>
+      <p class="muted" style="margin-bottom:8px">Under his oversight, the Lemmon Avenue team includes:</p>
+      <ul class="cred-list">
+        <li><span class="mk">✦</span>Highly trained aesthetic injectors with specialized expertise in facial anatomy and natural-result technique</li>
+        <li><span class="mk">✦</span>Certified laser specialists experienced with BBL, Halo, ProFractional, and more</li>
+        <li><span class="mk">✦</span>Skilled nurses and aesthetic providers committed to individualized, conservative care</li>
+        <li><span class="mk">✦</span>Knowledgeable skincare specialists who support and amplify your results at home</li>
+      </ul>
+      <p style="margin-bottom:16px"><strong>This is not a team that recommends the most treatments. It's a team that recommends the right treatments.</strong></p>
+      <p class="muted" style="margin-bottom:16px">We built Lemmon Avenue for people who've had enough of the industry's extremes: the bargain clinics that cut corners, the social-media-famous injectors who replicate the same look on every face, and the practices where you leave feeling oversold and underheard. Our patients are smart. They research. They've often been disappointed somewhere else before they found us — and we take that trust seriously.</p>
+      <p style="font-family:var(--font-display);font-style:italic;font-size:1.5rem;color:var(--fg)">Natural. Balanced. Yours. That's the Lemmon Avenue standard.</p>
+    </div>
+    <div class="split-media">
+      <div class="about-media">
+        <div class="section-img portrait"><img src="mq57k50j-ChatGPT-Image-Jun-8_-2026_-08_45_02-AM.png" alt="Dr. Mark Deuber, board-certified plastic surgeon and medical director" loading="lazy"></div>
+        <div class="stack-2">
+          <div class="section-img square"><img src="mq57k4q0-660108687_18261217882293086_2577402996251596457_n.jpg" alt="The Lemmon Avenue team" loading="lazy"></div>
+          <div class="section-img square"><img src="mq57k4yv-ChatGPT-Image-Jun-8_-2026_-08_44_46-AM.png" alt="The Lemmon Avenue clinic reception area" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--white" id="forme">
+  <div class="container split reveal">
+    <div class="split-media"><div class="section-img portrait"><img src="mq57k55v-Screenshot_31-5-2026_131713_www.instagram.com.jpeg" alt="A woman representing the appearance-conscious Dallas and Frisco audience" loading="lazy"></div></div>
+    <div class="split-copy">
+      <span class="eyebrow">Is This For Me?</span>
+      <h2 style="margin:14px 0 22px">You Might Be in the Right Place If…</h2>
+      <ul class="qual-list yes">
+        <li><span class="mk">✓</span>You've started noticing changes in photos that you don't notice in the mirror — and the gap between how you feel and how you look has quietly bothered you for longer than you'd like to admit.</li>
+        <li><span class="mk">✓</span>You want help — but you're terrified of looking “done,” overdone, or like someone who's clearly had “work.”</li>
+        <li><span class="mk">✓</span>You've Googled treatments, watched the videos, read the reviews — and you're still not sure whether you need Botox, filler, laser, resurfacing, or something else entirely.</li>
+        <li><span class="mk">✓</span>You've had a treatment elsewhere that didn't deliver what you hoped — and you're more cautious now because of it.</li>
+        <li><span class="mk">✓</span>You're ready to invest in yourself — but only with a practice you can genuinely trust, with real credentials, real expertise, and a genuine commitment to what looks best on you.</li>
+      </ul>
+      <p style="margin:24px 0 6px"><strong>If you recognized yourself in two or more of those statements, this is likely exactly the practice you've been looking for.</strong></p>
+      <p class="muted" style="margin-bottom:22px">The next step is simple: take our free Aesthetic Intelligence Assessment and let us show you a personalized treatment path designed for your specific concerns, goals, and timeline.</p>
+      <a href="#assessment" class="btn btn-gold">→ Yes, I'm Ready to Find My Treatment Path</a>
+    </div>
+  </div>
+</section>
+
+<section class="band band--ink">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow" style="color:var(--gold)">Honest Positioning</span>
+      <h2>In the Spirit of Full Transparency — Lemmon Avenue May Not Be the Right Fit If:</h2>
+      <p class="lead measure" style="color:rgba(244,239,230,.78)">We take our patient relationships seriously. That means we'd rather be honest upfront than have you feel disappointed later.</p>
+    </div>
+    <ul class="qual-list no reveal" style="margin-inline:auto">
+      <li><span class="mk">✗</span><span><strong style="color:#FBF7EE">You're primarily shopping for the lowest price.</strong> Our services reflect the expertise, technology, and medical oversight we provide. We are not — and never will be — the cheapest option in Dallas. If cost is your primary decision factor, there are other providers who will compete on that basis. We are not one of them.</span></li>
+      <li><span class="mk">✗</span><span><strong style="color:#FBF7EE">You want dramatic results fast, regardless of what looks natural.</strong> Our philosophy is rooted in balance, proportion, and what actually looks best on your specific face. If you want maximum volume or aggressive treatment without regard for subtlety, our conservative approach may frustrate you.</span></li>
+      <li><span class="mk">✗</span><span><strong style="color:#FBF7EE">You're not ready to invest time in the consultation and planning process.</strong> Great aesthetic results don't happen in a 10-minute appointment. If you're looking for a quick in-and-out experience without personalized assessment, our model may not match your expectations.</span></li>
+      <li><span class="mk">✗</span><span><strong style="color:#FBF7EE">You're outside our Dallas-Frisco service area</strong> and unable to attend in-person appointments. We offer virtual consultations for initial assessment, but treatment requires in-person visits to our Dallas or Frisco locations.</span></li>
+    </ul>
+    <p class="center reveal measure" style="margin:32px auto 0;font-family:var(--font-display);font-style:italic;font-size:1.5rem;color:#FBF7EE">If none of those apply to you — and if the previous section felt like we were reading your mind — then you belong here. And we'd be honored to earn your trust.</p>
+  </div>
+</section>
+
+<section class="band band--cream" id="assessment">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Choose Your Path</span>
+      <h2>Your Aesthetic Journey Starts Here</h2>
+      <p class="lead measure">Different entry points for different stages — not an upsell. Choose the one that feels right for where you are today.</p>
+    </div>
+    <div class="offer-grid reveal">
+      <article class="offer-card feature">
+        <div class="offer-thumb"><img src="mq57k56s-Screenshot_31-5-2026_131743_www.instagram.com.jpeg" alt="A natural, refreshed result representing the free assessment path"><span class="ribbon">Where Most Patients Begin</span></div>
+        <div class="offer-body"><span class="offer-path">Path 1 · Discover</span><h3>Free Aesthetic Intelligence Assessment</h3><p class="offer-tagline">The right starting point for anyone who isn't sure what they need.</p><p>Take our free, 3-minute assessment to receive a personalized treatment roadmap based on your concerns, goals, skin type, and timeline. Developed under the direction of Dr. Deuber's practice standards. No commitment, no consultation fee.</p><div class="offer-price"><b>Free</b> · 3 minutes · No commitment</div><a href="tel:2147020707" class="btn btn-gold btn-block">Take My Free Assessment Now</a></div>
+      </article>
+      <article class="offer-card">
+        <div class="offer-thumb"><img src="mq57k52h-Screenshot_31-5-2026_13188_www.instagram.com.jpeg" alt="A signature HydraFacial treatment in progress"></div>
+        <div class="offer-body"><span class="offer-path">Path 2 · Experience</span><h3>“Glow Starter” Session</h3><p class="offer-tagline">For those ready to experience the Lemmon Avenue difference firsthand.</p><p>Begin with an introductory treatment designed to show you exactly what's possible: a signature HydraFacial plus a personalized skin consultation with product recommendations and a discussion of your longer-term options.</p><div class="offer-price">Pricing discussed at booking · Book online or by phone</div><a href="tel:2147020707" class="btn btn-ghost btn-block">Book My Glow Starter Session</a></div>
+      </article>
+      <article class="offer-card">
+        <div class="offer-thumb"><img src="mq57k4uu-ChatGPT-Image-Jun-8_-2026_-08_43_28-AM.png" alt="Natural facial harmony result from injectables"></div>
+        <div class="offer-body"><span class="offer-path">Path 3 · Transform</span><h3>“Facial Harmony Package”</h3><p class="offer-tagline">For patients ready to commit to comprehensive, natural facial rejuvenation.</p><p>A carefully sequenced combination of Botox and/or dermal filler, customized by your specialist to your unique facial anatomy, with a 6-week follow-up to assess and refine. For patients ready to look genuinely, naturally refreshed.</p><div class="offer-price">Pricing discussed at consultation · <b>Financing available</b></div><a href="tel:2147020707" class="btn btn-ghost btn-block">Book My Facial Harmony Consultation</a></div>
+      </article>
+      <article class="offer-card">
+        <div class="offer-thumb"><img src="mq57k4q9-ChatGPT-Image-Jun-8_-2026_-08_42_31-AM.png" alt="Comprehensive skin transformation result from laser series"></div>
+        <div class="offer-body"><span class="offer-path">Path 4 · Elevate</span><h3>“Lemmon Avenue Glow Protocol”</h3><p class="offer-tagline">For patients seeking comprehensive skin transformation through advanced laser technology.</p><p>A multi-treatment laser and skin rejuvenation series designed to address texture, pigmentation, collagen loss, and skin quality at every level — with optional surgical consultation available within the same practice relationship.</p><div class="offer-price">Customized per patient · Consultation required</div><a href="tel:2147020707" class="btn btn-ghost btn-block">Request My Glow Protocol Consultation</a></div>
+      </article>
+    </div>
+    <p class="fin-note reveal"><b>Financing Available.</b> Investment shouldn't be a barrier to the right care. Lemmon Avenue offers flexible financing options to make your aesthetic plan work for your life. Ask about financing during your consultation or virtual appointment.</p>
+  </div>
+</section>
+
+<section class="band band--white">
+  <div class="container center reveal" style="max-width:760px">
+    <span class="eyebrow">A Note on Timing</span>
+    <h2 style="margin:16px 0 18px">Because Aesthetics Has a Timeline</h2>
+    <p class="muted" style="margin-bottom:16px">Some treatments take time to deliver full results. Botox settles in 10–14 days. Laser treatments often require a series of sessions spaced weeks apart. Fillers integrate over several weeks. Surgical recovery has its own timeline.</p>
+    <p class="muted" style="margin-bottom:16px">This means the best time to start your aesthetic journey is almost always <strong>before</strong> you need the results — not the week before your reunion, wedding, or gala.</p>
+    <p class="muted" style="margin-bottom:24px">Right now, our team is booking consultations for the season ahead. If you have an event, milestone, or personal timeline in mind, we'd encourage you to request your consultation now to ensure your plan can deliver the results you want in time. Limited consultation availability is real — we serve a high volume of patients across two locations, and our team's schedules fill.</p>
+    <a href="tel:2147020707" class="btn btn-primary">→ Check Available Consultation Times — Request My Spot Now</a>
+    <p class="subnote">Or call/text us directly: <strong>214.702.0707</strong> · Dallas &amp; Frisco locations</p>
+  </div>
+</section>
+
+<section class="band band--cream" id="faq">
+  <div class="container">
+    <div class="faq-wrap reveal">
+      <div class="faq-bg"><img src="mq57k4yv-ChatGPT-Image-Jun-8_-2026_-08_44_46-AM.png" alt="The Lemmon Avenue clinic environment"></div>
+      <div class="faq-inner">
+        <div class="section-head center" style="margin-bottom:36px">
+          <span class="eyebrow" style="color:var(--gold)">Objections, Answered</span>
+          <h2 style="color:#FBF7EE">Your Questions, Answered Honestly</h2>
+          <p class="lead measure" style="color:rgba(244,239,230,.78)">We believe informed patients make the best patients. Here are the questions we hear most often.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item"><button class="faq-q"><span>I'm afraid I'll look overdone. How do I know you won't make me look “fake”?</span><span class="ic">+</span></button><div class="faq-a"><div class="faq-a-inner">This is the question we hear most often, and we take it seriously. Our entire philosophy is built around natural-looking, balanced enhancement — which means we will never recommend more treatment than your face needs, and we'll always discuss what we're doing and why. Our before-and-after gallery is curated to show the results we deliver: subtle, refreshed, and natural. If what you see doesn't resonate with your goals, we're probably not the right fit — and we'd tell you that.</div></div></div>
+          <div class="faq-item"><button class="faq-q"><span>What's the difference between coming here versus a regular med spa?</span><span class="ic">+</span></button><div class="faq-a"><div class="faq-a-inner">The most important difference is medical oversight. Lemmon Avenue operates under the medical direction of Dr. Mark Deuber, a board-certified plastic surgeon — so the standards for training, technique, treatment planning, and patient safety are set at the level of a plastic surgery practice, not a standard spa. Our providers are also trained to understand facial anatomy holistically, which is how you get balanced, natural results instead of one area that looks “treated” and others that don't.</div></div></div>
+          <div class="faq-item"><button class="faq-q"><span>How do I know which treatment is right for me?</span><span class="ic">+</span></button><div class="faq-a"><div class="faq-a-inner">Honestly? That's our job, not yours. You don't need to arrive knowing the answer — you just need to show up with your concerns and goals. Our team's role is to translate what you want to see into the right clinical approach. That said, our free Aesthetic Intelligence Assessment is a great starting point. It takes about 3 minutes and gives you a personalized framework to bring into your appointment.</div></div></div>
+          <div class="faq-item"><button class="faq-q"><span>How much does it cost? Is this worth the investment?</span><span class="ic">+</span></button><div class="faq-a"><div class="faq-a-inner">We don't publish fixed pricing because personalized treatment plans have a range based on what you actually need — and we refuse to oversimplify that with a menu price. What we will tell you: our pricing reflects the expertise, technology, and medical oversight we provide. For patients comparing us to lower-cost alternatives, we'd encourage you to ask what the cost of a poor outcome would be. That math usually makes our investment look much more reasonable. Financing is available, and we're transparent about costs during your consultation — before you commit to anything.</div></div></div>
+          <div class="faq-item"><button class="faq-q"><span>What if I'm interested in something surgical, but I'm not sure?</span><span class="ic">+</span></button><div class="faq-a"><div class="faq-a-inner">You're in the right place. Many of our patients begin with non-surgical treatments and have surgical-curiosity questions along the way. Because Dr. Deuber is a board-certified plastic surgeon and the medical director of our practice, you can have that conversation without going somewhere new. We'll never push surgery on anyone — but if and when you're ready to explore it, we're already the team you trust.</div></div></div>
+          <div class="faq-item"><button class="faq-q"><span>What does the consultation process look like?</span><span class="ic">+</span></button><div class="faq-a"><div class="faq-a-inner">Your consultation is a conversation — not a sales pitch. A trained specialist will take time to understand your history, concerns, and goals. We'll look at your face, skin, or body in detail, discuss what's possible, and develop a realistic plan with clear expectations about results, timeline, and investment. You'll leave with a clear roadmap — not pressure to decide immediately.</div></div></div>
+          <div class="faq-item"><button class="faq-q"><span>Do you offer virtual consultations?</span><span class="ic">+</span></button><div class="faq-a"><div class="faq-a-inner">Yes. Our virtual consultation tool is available for patients who want to begin the conversation before coming in, or who prefer an initial remote assessment. It's a great way to get a sense of whether Lemmon Avenue is the right fit before scheduling your in-person visit.</div></div></div>
+          <div class="faq-item"><button class="faq-q"><span>I've had a bad experience at another practice. How do I know this will be different?</span><span class="ic">+</span></button><div class="faq-a"><div class="faq-a-inner">We hear this often, and we understand why you'd be cautious. The best thing we can do is be transparent: our approach, credentials, before-and-after gallery, and patient reviews are all available for you to evaluate before you ever book. The fact that you had a bad experience elsewhere is exactly why board-certified medical oversight and trained, specialized providers matter so much. Come in, ask every question you have. If we're not the right fit, we'll tell you — but we think you'll feel the difference from the first conversation.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--ink" id="book">
+  <div class="container final-grid">
+    <div class="final-copy reveal">
+      <span class="eyebrow" style="color:var(--gold)">Your First Step</span>
+      <h2 style="margin:14px 0 20px">Will You Take the First Step Toward Looking Like the Best Version of Yourself?</h2>
+      <p style="color:rgba(244,239,230,.82);margin-bottom:16px">You've read this far. Which means some part of you already knows you're ready for this. Maybe it's been six months of noticing something in the mirror. Maybe you've researched a dozen practices and something brought you here specifically.</p>
+      <p style="color:rgba(244,239,230,.82);margin-bottom:16px">Our team of specialists — under the direction of board-certified plastic surgeon Dr. Mark Deuber — is ready to build a plan specifically for your face, your skin, your goals, and your timeline. No pressure. No overselling. No guesswork.</p>
+      <p style="font-family:var(--font-display);font-style:italic;font-size:1.45rem;color:#FBF7EE;margin-bottom:8px">Just a clear, personalized path toward looking naturally, beautifully, unmistakably like yourself.</p>
+      <div class="final-cta-card">
+        <div class="cta-row"><div><div class="cta-head">Take My Free Aesthetic Assessment</div><div class="cta-sub">3 minutes · Personalized results · No commitment required</div></div><a href="tel:2147020707" class="btn btn-gold btn-block">→ I'm Ready to Find My Best Treatment Path</a></div>
+        <div class="cta-row"><div><div class="cta-head">Request My Consultation</div><div class="cta-sub">Available online, by phone, or by text</div></div><a href="tel:2147020707" class="btn btn-ghost-light btn-block">→ I'm Ready to Meet the Lemmon Avenue Team</a></div>
+        <div class="cta-row"><div><div class="cta-head">Start My Virtual Consultation</div><div class="cta-sub">Our virtual tool is available now</div></div><a href="tel:2147020707" class="btn btn-ghost-light btn-block">→ I'd Like to Begin the Conversation</a></div>
+      </div>
+      <div class="contact-block">
+        <span>📞 <b>Call or Text:</b> <a href="tel:2147020707">214.702.0707</a></span>
+        <span>📍 <b>Locations:</b> Dallas &amp; Frisco, Texas</span>
+        <span>🕐 <b>Hours:</b> By appointment — call for current availability</span>
+      </div>
+    </div>
+    <div class="final-media reveal"><div class="section-img"><img src="mq57k55v-Screenshot_31-5-2026_131713_www.instagram.com.jpeg" alt="A naturally refreshed, confident result — the Lemmon Avenue standard" loading="lazy"></div></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="mq57k52h-logo.png" alt="Lemmon Avenue Plastic Surgery &amp; Laser Center">
+        <p class="footer-trust" style="margin-top:14px;max-width:34ch">Board-certified plastic-surgery expertise with full-service aesthetic convenience — natural, balanced, and unmistakably you.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Explore</h4><a href="#difference">The Difference</a><a href="#services">Services</a><a href="#journey">How It Works</a><a href="#reviews">Patient Reviews</a><a href="#team">Our Team</a><a href="#faq">FAQ</a></div>
+        <div class="footer-col"><h4>Get Started</h4><a href="#assessment">Free Assessment</a><a href="#book">Request Consultation</a><a href="tel:2147020707">Call 214.702.0707</a></div>
+        <div class="footer-col"><h4>Locations</h4><p>Dallas, Texas</p><p>Frisco, Texas</p><p>By appointment</p></div>
+      </div>
+    </div>
+    <div class="footer-trust" style="margin-bottom:20px">Board-Certified Plastic Surgeon Medical Director · Trained Aesthetic Specialists · Advanced Medical-Grade Technology · Luxury Patient Experience · Dallas &amp; Frisco, Texas</div>
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> Lemmon Avenue Plastic Surgery &amp; Laser Center. All rights reserved.</span>
+      <span>Medically directed by Dr. Mark Deuber, Board-Certified Plastic Surgeon</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta"><a href="#assessment" class="btn btn-gold btn-block">→ Take the Free Assessment</a></div>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+(function(){
+  var toggle=document.getElementById('navToggle');var links=document.querySelector('.nav-links');if(!toggle)return;
+  toggle.addEventListener('click',function(){
+    var open=links.style.display==='flex';
+    if(open){links.style.display='';}else{links.style.display='flex';links.style.position='absolute';links.style.top='140px';links.style.left='0';links.style.right='0';links.style.flexDirection='column';links.style.background='var(--bg)';links.style.padding='24px 28px';links.style.gap='20px';links.style.borderBottom='1.5px solid var(--gold-soft)';links.style.boxShadow='0 20px 40px -20px rgba(31,31,31,.3)';links.style.zIndex='60';}
+    toggle.setAttribute('aria-expanded',String(!open));
+  });
+  links.addEventListener('click',function(e){if(e.target.tagName==='A'&&window.innerWidth<=960){links.style.display='';toggle.setAttribute('aria-expanded','false');}});
+})();
+document.querySelectorAll('.faq-item').forEach(function(item){
+  var q=item.querySelector('.faq-q');var a=item.querySelector('.faq-a');
+  q.addEventListener('click',function(){
+    var isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(o){o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null;});
+    if(!isOpen){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+  });
+});
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>
