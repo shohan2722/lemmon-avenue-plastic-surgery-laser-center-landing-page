@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Lemmon Avenue Plastic Surgery & Laser Center — Landing Page",
+  "entry": "lemmon-avenue-landing.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "primary": true,
+  "createdAt": "2026-06-21T21:44:01.801Z",
+  "updatedAt": "2026-06-21T21:44:01.812Z",
+  "sourceSkillId": "agent-browser",
+  "metadata": {
+    "identifier": "lemmon-avenue-landing",
+    "artifactType": "text/html",
+    "inferred": false
+  }
+}
